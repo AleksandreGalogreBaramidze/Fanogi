@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800906922910",
+    "project_id": "fanogi-12916",
+    "storage_bucket": "fanogi-12916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800906922910:android:d038446544a9f7859be48f",
+        "android_client_info": {
+          "package_name": "com.example.fanogi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800906922910-gvi6nfo47o949c4avpk2htlgio174ofh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjaa5EWMqRPeRa894_rxkr0xYGVTFcpI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800906922910-gvi6nfo47o949c4avpk2htlgio174ofh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
