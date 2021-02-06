@@ -16,6 +16,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class Registration extends AppCompatActivity {
+    public void updateUI(FirebaseUser account){
+    }
     private FirebaseAuth mAuth;
     public void RegistrationMail (View View){
         EditText RegViaMailName = (EditText) findViewById(R.id.regMailName);
@@ -45,12 +47,13 @@ public class Registration extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 FirebaseUser user = mAuth.getCurrentUser();
-
-                                Intent RegistrationIntent = new Intent(getApplicationContext(), Feed.class);
+                                updateUI(user);
+                                Intent RegistrationIntent = new Intent(getApplicationContext(), FeedActivity.class);
                                 startActivity(RegistrationIntent);
                             } else {
                                 Toast.makeText(Registration.this, "Authentication failed.",
                                         Toast.LENGTH_SHORT).show();
+                                updateUI(null);
 
                             }
 
