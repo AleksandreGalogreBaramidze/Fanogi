@@ -22,7 +22,7 @@ public class Registration extends AppCompatActivity {
         EditText RegViaMailMail = (EditText) findViewById(R.id.regMail);
         EditText RegViaMailPass = (EditText) findViewById(R.id.regPass);
         String email = (String) RegViaMailMail.getText().toString();
-        String password = (String) RegViaMailMail.getText().toString();
+        String password = (String) RegViaMailPass.getText().toString();
         if (RegViaMailMail.getText().toString().isEmpty()) {
             RegViaMailMail.setError("გთხოვთ შეიყვანოთ თქვენი მეილი");
             RegViaMailMail.requestFocus();
