@@ -56,8 +56,6 @@ public class Registration extends AppCompatActivity {
                                 updateUI(null);
 
                             }
-
-
                         }
                     });
 

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Fanogi</string>
+    <string name="Registrate">Register</string>
+    <string name="LogIn">LOG IN</string>
+    <string name="WelcomeBack">Welcome Back!</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="YourName">Your name</string>
+    <string name="JoinUs">Join us:</string>
+    <string name="FeaturedSongs">Featured Songs</string>
+    <string name="CreatorOne">Lasha Aptsiauri</string>
+    <string name="CreatorTwo">Aleksandre Galogre-Baramidze</string>
 </resources>
