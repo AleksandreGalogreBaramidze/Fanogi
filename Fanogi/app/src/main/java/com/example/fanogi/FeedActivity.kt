@@ -1,6 +1,9 @@
 package com.example.fanogi
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,12 +17,16 @@ class FeedActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feed);
 
         recyclerView = findViewById(R.id.recyclerView)
         val database = FirebaseDatabase.getInstance().reference
+
+
+
 
         var getData = object : ValueEventListener{
             override fun onCancelled(error: DatabaseError) {
@@ -31,7 +38,8 @@ class FeedActivity : AppCompatActivity() {
                     var musicCover = i.child("image").getValue().toString()
                     var musicTitle = i.child("title").getValue().toString()
                     var musicAuthor = i.child("author").getValue().toString()
-                    musics.add(Music(musicCover, musicTitle, musicAuthor))
+                    var link = i.child("link").getValue().toString()
+                    musics.add(Music(musicCover, musicTitle, musicAuthor, link))
                 }
 
                 val adapter = MusicAdapter(musics)
